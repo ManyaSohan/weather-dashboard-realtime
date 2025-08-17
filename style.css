@@ -1,0 +1,139 @@
+/* Global Styles */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Weather Container */
+#weather-container {
+    background: rgba(255, 255, 255, 0.15);
+    max-width: 420px;
+    width: 90%;
+    padding: 30px 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    color: #fff;
+}
+
+/* Heading */
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+/* Input */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Button */
+button {
+    background: #ff7f50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #ff6333;
+}
+
+/* Temperature */
+#temp-div p {
+    font-size: 64px;
+    font-weight: 600;
+    margin: 15px 0 5px;
+}
+
+/* Weather Info */
+#weather-info {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/* Weather Icon */
+#weather-icon {
+    width: 180px;
+    height: 180px;
+    display: none;
+    margin: 0 auto 10px;
+}
+
+/* Hourly Forecast */
+#hourly-heading {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#hourly-forecast {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 5px;
+}
+
+.hourly-item {
+    flex: 0 0 auto;
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 12px;
+    font-size: 14px;
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+/* Scrollbar */
+#hourly-forecast::-webkit-scrollbar {
+    height: 6px;
+}
+
+#hourly-forecast::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.5);
+    border-radius: 3px;
+}
+
+#hourly-forecast::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Footer */
+#footer {
+    margin-top: 25px;
+    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+}
