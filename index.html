@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="weather-container">
+        <h2>Weather Dashboard</h2>
+
+        <input type="text" id="city" placeholder="Enter state (e.g., Karnataka)">
+
+        <button onclick="getWeather()">Search</button>
+
+        <img id="weather-icon" alt="Weather Icon">
+
+        <div id="temp-div"></div>
+        <div id="weather-info"></div>
+
+        <div id="hourly-heading">Hourly Forecast</div>
+        <canvas id="hourly-chart" width="400" height="150"></canvas>
+        <div id="hourly-forecast"></div>
+
+        <div id="footer">Manya Sohan D.H</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
